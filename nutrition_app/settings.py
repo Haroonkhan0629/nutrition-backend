@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '*fallback*')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://fit2go-pro.netlify.app/"]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -126,7 +126,7 @@ WSGI_APPLICATION = 'nutrition_app.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://drbanogul:5432@localhost/nutrition',
+        default='postgresql://Haroonkhan0629:eYpJSf81KbWD@ep-fancy-fog-a5q75bke.us-east-2.aws.neon.tech/exercise?sslmode=require',
         conn_max_age=600, conn_health_checks=True
     )
 }
